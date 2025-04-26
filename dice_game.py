@@ -16,7 +16,7 @@ while playing:
                 dice2 = random.randint(1, 6)
                 print(f'Roll {i + 1}: ({dice1}, {dice2})')
                 roll_count += 1
-                print(f"You have rolled the dice (roll_count) times.\n")
+                print(f"You have rolled the dice {roll_count} times.\n")
 
     elif choice == 'N' or choice == 'NO':
         print('Thank you for playing the game!')
