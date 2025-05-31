@@ -11,7 +11,9 @@ while True:
 
     while guess_count < max_attempts:
         try:
-            guess = int(input(f'Guess the number between {min_value} and {max_value}: '))
+            guess = int(
+                input(f'Guess the number between {min_value} and {max_value}: ')
+            )
             guess_count += 1 
             if guess < min_value:
                 print('You are below the minimum value.')
@@ -20,9 +22,16 @@ while True:
             elif guess > number_to_guess:
                 print('Too high! Try again.')
             elif guess < number_to_guess:
-                print('Too low! Try again.')
+                print(
+                    'Too low! Try again.'
+                )
             else:
-                print(f'You guessed it! Smart guess! It took you {guess_count} attempts.\n')
+                print(
+                    (
+                        f'You guessed it! Smart guess! '
+                        f'It took you {guess_count} attempts.\n'
+                    )
+                )
 
                 if best_score is None or guess_count < best_score:
                     best_score = guess_count
@@ -36,9 +45,8 @@ while True:
         print(f"The best score so far is {best_score} attempts.")
 
     play_again = input("Do you want to play again? (yes/no): ").strip().lower()
-    if play_again == 'yes' or play_again == 'y':
+    if play_again == 'yes':
         print("Let's play again, hun.")
     else:
         print("Thanks for playing! Goodbye!")
         break
-    
