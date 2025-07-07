@@ -43,7 +43,9 @@ def play_game():
         display_choice(user_choice, computer_choice)
         determine_winner(user_choice, computer_choice)
 
-        play_again = input('Do you want to play again? (yes/no): ').strip().lower()
+        play_again = input(
+            'Do you want to play again? (yes/no): '
+        ).strip().lower()
         if play_again != 'yes':
             print('Thanks for playing! Goodbye!')
             break

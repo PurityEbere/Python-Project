@@ -1,6 +1,6 @@
 import random
 roll_count = 0
-playing  = True
+playing = True
 while playing:
     choice = input('Roll the dice? (Y/N): ').upper()
 
