@@ -9,6 +9,7 @@
 - Open the Terminal and navigate to the project folder.
 - Run `docker volume create describly_mysql_data` to create a docker volue in you machine. Required to persist the mysql data.
 - Below will be your mysql connection details
+- Below will be 
 ```bash
 MYSQL_HOST=mysql
 MYSQL_USER=root
