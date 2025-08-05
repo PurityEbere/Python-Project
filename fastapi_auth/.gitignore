@@ -1,3 +1,5 @@
-/venv
-/.idea
-/.pycharm
+.venv
+.idea
+.pycharm
+.env
+__pycache__
