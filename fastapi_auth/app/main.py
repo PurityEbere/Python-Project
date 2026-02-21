@@ -23,7 +23,10 @@ async def login_handler(request: LoginRequest):
 @app.post("/auth/register")
 async def register_handler(request: RegisterRequest):
     print(request.email, request.username, request.password)
-    return 5
+    
+    
+# 58
+
 
 if __name__ == "__main__":
     uvicorn.run("main:app", port=3000, log_level="info", reload=True)

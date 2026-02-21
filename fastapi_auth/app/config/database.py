@@ -21,3 +21,12 @@ def get_session() -> Generator:
         yield session
     finally:
         session.close()
+        
+        
+        
+def get_userdata():
+    userdater = Database()
+    try
+        yield userdater
+    finally:
+        userdater.close()

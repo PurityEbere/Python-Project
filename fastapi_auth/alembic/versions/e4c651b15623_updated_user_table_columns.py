@@ -31,4 +31,9 @@ def downgrade() -> None:
     op.add_column('users', sa.Column('deleted_at', mysql.DATETIME(), nullable=True))
     op.drop_index(op.f('ix_users_mobile'), table_name='users')
     op.drop_column('users', 'mobile')
+    # op.drop_column('users', 'mobile')
+    
     # ### end Alembic commands ###
+    
+    
+    
